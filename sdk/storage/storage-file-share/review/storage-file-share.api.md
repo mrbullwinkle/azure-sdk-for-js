@@ -315,8 +315,10 @@ export interface DirectoryItem {
     attributes?: string;
     // (undocumented)
     fileId?: string;
+    // Warning: (ae-forgotten-export) The symbol "StringEncoded" needs to be exported by the entry point index.d.ts
+    //
     // (undocumented)
-    name: string;
+    name: StringEncoded;
     // (undocumented)
     permissionKey?: string;
     properties?: FileProperty;
@@ -808,7 +810,7 @@ export interface FileItem {
     // (undocumented)
     fileId?: string;
     // (undocumented)
-    name: string;
+    name: StringEncoded;
     // (undocumented)
     permissionKey?: string;
     properties: FileProperty;
@@ -1169,7 +1171,8 @@ export interface HandleItem {
     lastReconnectTime?: Date;
     openTime: Date;
     parentId?: string;
-    path: string;
+    // (undocumented)
+    path: StringEncoded;
     sessionId: string;
 }
 
@@ -1233,13 +1236,13 @@ export interface ListFilesAndDirectoriesSegmentResponse {
     // (undocumented)
     directoryId?: string;
     // (undocumented)
-    directoryPath: string;
+    directoryPath: StringEncoded;
     // (undocumented)
     marker?: string;
     // (undocumented)
     maxResults?: number;
     // (undocumented)
-    prefix: string;
+    prefix: StringEncoded;
     segment: FilesAndDirectoriesListSegment;
     // (undocumented)
     serviceEndpoint: string;
