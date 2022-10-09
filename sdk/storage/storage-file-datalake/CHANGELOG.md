@@ -1,8 +1,10 @@
 # Release History
 
-## 12.11.0-beta.2 (Unreleased)
+## 12.11.0 (Unreleased)
 
 ### Features Added
+
+- Includes all features released in 12.11.0-beta.1.
 
 ### Breaking Changes
 
